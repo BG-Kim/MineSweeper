@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Mine Sweeper</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="./assets/css/minesweeper.css">   
+	</head>
+	<body>
+		<div class="levelPanel">			
+			<button onclick="setBinner()" >Binner</button>
+			<button onclick="setIntermediate()">Intermediate</button>
+			<button onclick="setExpert()">Expert</button>
+		</div>
+
+		<div id="gameBoard" class="game-board" >
+
+			<div class="info-panel">
+				
+				<div class="mine-count-panel">
+					<div id="mineNum1" class="num-image num0"></div>
+					<div id="mineNum2" class="num-image num-"></div>
+					<div id="mineNum3" class="num-image num1"></div>
+				</div>
+				<div class="flex-padding-width"></div>
+				<img id="btnReset" class="reset-icon" src="assets/image/face_unpressed.svg" />
+				<div class="flex-padding-width"></div>
+				<div class="time-panel">
+					<div id="time1" class="num-image num0"></div>
+					<div id="time2" class="num-image num0"></div>
+					<div id="time3" class="num-image num0"></div>
+				</div>
+			</div>
+
+			<div id="mineField"  class="mine-field">
+			</div>
+	    </div>
+
+		<script type="text/javascript" src="assets/js/minesweeper.js"></script>
+	</body>
+</html>

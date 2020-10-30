@@ -1,0 +1,187 @@
+.flex-padding-width {
+	flex-grow: 1;
+}
+
+
+.levelPanel {
+	margin-bottom:  20px;
+}
+
+.game-board {
+	width: 216px;
+	height : 260px;
+	border : #444 4px solid;
+}
+
+.game-board .info-panel {
+	background-color: #b3b3b3;
+	width: calc(100% - 8px);
+	display: flex;
+	padding: 4px;
+	align-items: center;
+	border-bottom: #444 4px solid;
+}
+
+.game-board .info-panel .mine-count-panel {
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+
+.game-board .info-panel .reset-icon {
+	height : 32px;
+}
+
+
+
+
+.game-board .info-panel .time-panel {
+	background-color: black;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
+
+.game-board .mine-field .row {
+	display: flex;
+}
+
+
+.game-board .mine-field .block-closed {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/closed.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-0 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type0.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-1 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type1.svg);
+	background-size: 100%;
+}
+
+
+.game-board .mine-field .open-2 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type2.svg);
+	background-size: 100%;
+}
+
+
+.game-board .mine-field .open-3 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type3.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-4 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type4.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-5 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type5.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-6 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type6.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-7 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type7.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .open-8 {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/type8.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .mine {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/mine.svg);
+	background-size: 100%;
+}
+
+
+.game-board .mine-field .mine-red {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/mine_red.svg);
+	background-size: 100%;
+}
+
+.game-board .mine-field .flag {
+	width: 24px;
+	height : 24px;
+	background-image: url(../image/flag.svg);
+	background-size: 100%;
+}
+
+
+.game-board .info-panel .num-image{
+	width: 16px;
+	height: 32px;
+	background-size: 100%;
+	margin : 0px 1px;
+}
+
+.game-board .num-image.num0 {
+	background-image: url(../image/d0.svg);
+}
+.game-board .num-image.num1 {
+	background-image: url(../image/d1.svg);
+}
+.game-board .num-image.num2 {
+	background-image: url(../image/d2.svg);
+}
+.game-board .num-image.num3 {
+	background-image: url(../image/d3.svg);
+}
+.game-board .num-image.num4 {
+	background-image: url(../image/d4.svg);
+}
+.game-board .num-image.num5 {
+	background-image: url(../image/d5.svg);
+}
+.game-board .num-image.num6 {
+	background-image: url(../image/d6.svg);
+}
+.game-board .num-image.num7 {
+	background-image: url(../image/d7.svg);
+}
+.game-board .num-image.num8 {
+	background-image: url(../image/d8.svg);
+}
+.game-board .num-image.num9 {
+	background-image: url(../image/d9.svg);
+}
+.game-board .num-image.num- {
+	background-image: url(../image/d-.svg);
+}
