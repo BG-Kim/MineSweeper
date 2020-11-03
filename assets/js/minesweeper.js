@@ -28,7 +28,7 @@ let mineSweeperGame =  null;
 let _timeSecond = 0;
 let _isStartGame = false;
 let _isGameOver = false;
-
+let _pressTimer = null;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // 									TYPES 														 //
@@ -230,7 +230,26 @@ class MineSweeper {
 			return true;
 		}
 
-		return ( this.remainMineCount === 0 && isAllSpaceOpen() );
+		function getCloseSpaceCount() {
+			let closeCount = 0;
+			let rowField = null
+			let space = null;
+			for( let i = 0 ;	i < _this.field.length;	++i) {
+				rowField = _this.field[i];
+				for( let j = 0;		j < rowField.length;	++j ) {
+					space = rowField[j];
+					if( space.isSetFlag() === false && space.isOpen() === false )
+						++closeCount;
+				}
+			}
+			return closeCount;
+		}
+
+
+		return ( 
+			this.remainMineCount === 0 && isAllSpaceOpen() || 		
+			this.remainMineCount === getCloseSpaceCount()
+		);
 	}
 
 
